@@ -1,76 +1,98 @@
- <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Bewar A. Sedo</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-  <script src="https://cdn.jsdelivr.net/npm/smooth-scroll@16.1.3/dist/smooth-scroll.min.js"></script>
-</head>
-<body>
-  <!-- Navigation Bar -->
-  <header>
-    <nav>
-      <ul>
-        <li><a href="#about" class="scroll">About</a></li>
-        <li><a href="#projects" class="scroll">Projects</a></li>
-        <li><a href="#contact" class="scroll">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+ * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  <!-- About Section -->
-  <section id="about">
-    <div class="container">
-      <h1>Hi, I'm Bewar A. Sedo</h1>
-      <p>Creative Technologist • Designer • Developer</p>
-      <p>I’m a multidisciplinary designer and developer passionate about creating beautiful and functional digital experiences.</p>
-    </div>
-  </section>
+body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
+}
 
-  <!-- Projects Section -->
-  <section id="projects">
-    <div class="container">
-      <h2>My Projects</h2>
-      <div class="project">
-        <h3>Project 1</h3>
-        <p>Details about your first project.</p>
-        <a href="https://github.com/yourusername/project1" target="_blank">View on GitHub</a>
-      </div>
-      <div class="project">
-        <h3>Project 2</h3>
-        <p>Details about your second project.</p>
-        <a href="https://github.com/yourusername/project2" target="_blank">View on GitHub</a>
-      </div>
-      <div class="project">
-        <h3>Project 3</h3>
-        <p>Details about your third project.</p>
-        <a href="https://github.com/yourusername/project3" target="_blank">View on GitHub</a>
-      </div>
-    </div>
-  </section>
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+}
 
-  <!-- Contact Section -->
-  <section id="contact">
-    <div class="container">
-      <h2>Contact Me</h2>
-      <p>Email me at <a href="mailto:you@example.com">you@example.com</a> or connect with me on <a href="https://www.linkedin.com">LinkedIn</a>.</p>
-    </div>
-  </section>
+header nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+}
 
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2025 Bewar A. Sedo</p>
-  </footer>
+header nav ul li {
+  margin: 0 15px;
+}
 
-  <script>
-    // Initialize smooth scroll
-    var scroll = new SmoothScroll('.scroll', {
-      speed: 800,
-      speedAsDuration: true
-    });
-  </script>
-</body>
-</html>
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+  color: #f4b400;
+}
+
+section {
+  padding: 80px 0;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+h1, h2, h3 {
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 2.5em;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.project {
+  margin-bottom: 40px;
+}
+
+.project a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 600;
+  margin-top: 10px;
+  display: inline-block;
+  border: 2px solid #333;
+  padding: 5px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.project a:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+footer p {
+  font-size: 1rem;
+}
