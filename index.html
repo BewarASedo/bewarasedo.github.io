@@ -1,31 +1,98 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Bewar A. Sedo</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
   <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
     body {
-      font-family: sans-serif;
-      max-width: 700px;
-      margin: 100px auto;
-      padding: 20px;
+      font-family: 'Inter', sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
       line-height: 1.6;
     }
-    h1 {
-      font-size: 2.5em;
-      color: #333;
+
+    header {
+      background: #0d47a1;
+      color: #fff;
+      padding: 60px 20px;
+      text-align: center;
     }
+
+    header h1 {
+      font-size: 3em;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.2em;
+      color: #cfd8dc;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    section {
+      margin-bottom: 40px;
+    }
+
+    h2 {
+      color: #0d47a1;
+      margin-bottom: 10px;
+      font-size: 1.5em;
+    }
+
     a {
-      color: #007acc;
+      color: #0d47a1;
       text-decoration: none;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px 0;
+      background: #eee;
+      font-size: 0.9em;
+      color: #666;
     }
   </style>
 </head>
 <body>
-  <h1>Hi, I'm Bewar 👋</h1>
-  <p>Welcome to my personal website!</p>
-  <p>More content coming soon. Stay tuned.</p>
-  <p>Connect with me on <a href="https://www.linkedin.com" target="_blank">LinkedIn</a>.</p>
+  <header>
+    <h1>Bewar A. Sedo</h1>
+    <p>Creative Technologist • Developer • Designer</p>
+  </header>
+
+  <div class="container">
+    <section>
+      <h2>About Me</h2>
+      <p>I'm a passionate developer and designer focused on building clean, user-friendly digital experiences. I love combining design with technology to solve real-world problems.</p>
+    </section>
+
+    <section>
+      <h2>Projects</h2>
+      <p><strong>🔗 Portfolio Website</strong> — This personal site, showcasing my work and experience.</p>
+      <p><strong>🔧 Project X</strong> — A full-stack app for managing tasks and productivity. <a href="#">View Project</a></p>
+    </section>
+
+    <section>
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:you@example.com">you@example.com</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/yourname" target="_blank">linkedin.com/in/yourname</a></p>
+    </section>
+  </div>
+
+  <footer>
+    <p>© 2025 Bewar A. Sedo — All Rights Reserved</p>
+  </footer>
 </body>
 </html>
